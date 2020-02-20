@@ -1,0 +1,82 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
+  - fishhook (0.2)
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - my_flutter (0.0.1):
+    - Flutter
+  - ReactiveObjC (3.1.0)
+  - RSSwizzle (0.1.0)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
+  - SFLog (0.1.6)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Aspects
+  - fishhook
+  - Flutter (from `my_flutter/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `my_flutter/.ios/Flutter/FlutterPluginRegistrant`)
+  - my_flutter (from `my_flutter/.ios/Flutter`)
+  - ReactiveObjC
+  - RSSwizzle
+  - SDWebImage
+  - SFLog
+  - YYKit
+
+SPEC REPOS:
+  https://git.coding.net/fourye/Specs.git:
+    - SFLog
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Aspects
+    - fishhook
+    - ReactiveObjC
+    - RSSwizzle
+    - SDWebImage
+    - YYKit
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: my_flutter/.ios/Flutter/engine
+  FlutterPluginRegistrant:
+    :path: my_flutter/.ios/Flutter/FlutterPluginRegistrant
+  my_flutter:
+    :path: my_flutter/.ios/Flutter
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
+  my_flutter: c0ca42721b3297bc8d54e93782ac00730d3bd1a1
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  SFLog: 0a278953a3f5e48929fddcd1c991a48c5e3f3058
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: c5d1d3a4161ab22d2c2b349bc01825bc866a404e
+
+COCOAPODS: 1.7.5

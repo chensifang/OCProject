@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		74B5F95020E7D1E1007C8738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74B5F94620E7D1E1007C8738 /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18394B1C1610D8E300335E85;
+			remoteInfo = Foundation;
+		};
+		74B5F95220E7D1E1007C8738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74B5F94620E7D1E1007C8738 /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1837DA191652D18400197E53;
+			remoteInfo = gdnc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74B5F92220E7D1E1007C8738 /* NSCharacterSets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NSCharacterSets; sourceTree = "<group>"; };
+		74B5F92320E7D1E1007C8738 /* GNUmakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = GNUmakefile; sourceTree = "<group>"; };
+		74B5F92420E7D1E1007C8738 /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = "<group>"; };
+		74B5F92520E7D1E1007C8738 /* README.initialize */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.initialize; sourceTree = "<group>"; };
+		74B5F92620E7D1E1007C8738 /* standalone.conf */ = {isa = PBXFileReference; lastKnownFileType = text; path = standalone.conf; sourceTree = "<group>"; };
+		74B5F92720E7D1E1007C8738 /* configure.ac */ = {isa = PBXFileReference; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		74B5F92820E7D1E1007C8738 /* Tools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tools; sourceTree = "<group>"; };
+		74B5F92920E7D1E1007C8738 /* INSTALL */ = {isa = PBXFileReference; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		74B5F92A20E7D1E1007C8738 /* ANNOUNCE */ = {isa = PBXFileReference; lastKnownFileType = text; path = ANNOUNCE; sourceTree = "<group>"; };
+		74B5F92B20E7D1E1007C8738 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		74B5F92C20E7D1E1007C8738 /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		74B5F92D20E7D1E1007C8738 /* ChangeLog */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		74B5F92E20E7D1E1007C8738 /* ChangeLog.2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChangeLog.2; sourceTree = "<group>"; };
+		74B5F92F20E7D1E1007C8738 /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
+		74B5F93020E7D1E1007C8738 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		74B5F93120E7D1E1007C8738 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
+		74B5F93220E7D1E1007C8738 /* base.make.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = base.make.in; sourceTree = "<group>"; };
+		74B5F93320E7D1E1007C8738 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		74B5F93420E7D1E1007C8738 /* Source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Source; sourceTree = "<group>"; };
+		74B5F93520E7D1E1007C8738 /* cross.config */ = {isa = PBXFileReference; lastKnownFileType = text; path = cross.config; sourceTree = "<group>"; };
+		74B5F93620E7D1E1007C8738 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
+		74B5F93720E7D1E1007C8738 /* gnustep-base.spec.old */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gnustep-base.spec.old"; sourceTree = "<group>"; };
+		74B5F93820E7D1E1007C8738 /* gnustep-base.spec.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gnustep-base.spec.in"; sourceTree = "<group>"; };
+		74B5F93920E7D1E1007C8738 /* Makefile.postamble */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.postamble; sourceTree = "<group>"; };
+		74B5F93A20E7D1E1007C8738 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		74B5F93B20E7D1E1007C8738 /* COPYING.LIB */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING.LIB; sourceTree = "<group>"; };
+		74B5F93C20E7D1E1007C8738 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		74B5F93D20E7D1E1007C8738 /* NEWS */ = {isa = PBXFileReference; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		74B5F93E20E7D1E1007C8738 /* Support */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Support; sourceTree = "<group>"; };
+		74B5F93F20E7D1E1007C8738 /* Version */ = {isa = PBXFileReference; lastKnownFileType = text; path = Version; sourceTree = "<group>"; };
+		74B5F94020E7D1E1007C8738 /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Headers; sourceTree = "<group>"; };
+		74B5F94120E7D1E1007C8738 /* macosx */ = {isa = PBXFileReference; lastKnownFileType = folder; path = macosx; sourceTree = "<group>"; };
+		74B5F94220E7D1E1007C8738 /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Examples; sourceTree = "<group>"; };
+		74B5F94320E7D1E1007C8738 /* travis-deps.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "travis-deps.sh"; sourceTree = "<group>"; };
+		74B5F94420E7D1E1007C8738 /* ChangeLog.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ChangeLog.1; sourceTree = "<group>"; };
+		74B5F94520E7D1E1007C8738 /* config.mak.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.mak.in; sourceTree = "<group>"; };
+		74B5F94620E7D1E1007C8738 /* base.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = base.xcodeproj; sourceTree = "<group>"; };
+		74B5F94920E7D1E1007C8738 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		74B5F94A20E7D1E1007C8738 /* NSTimeZones */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NSTimeZones; sourceTree = "<group>"; };
+		74B5F94B20E7D1E1007C8738 /* .cvsignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .cvsignore; sourceTree = "<group>"; };
+		74B5F94C20E7D1E1007C8738 /* gnustep-base.script.spec.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gnustep-base.script.spec.in"; sourceTree = "<group>"; };
+		74B5F94D20E7D1E1007C8738 /* COPYINGv3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYINGv3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		74B5F91C20E7D1E1007C8738 = {
+			isa = PBXGroup;
+			children = (
+				74B5F92220E7D1E1007C8738 /* NSCharacterSets */,
+				74B5F92320E7D1E1007C8738 /* GNUmakefile */,
+				74B5F92420E7D1E1007C8738 /* Documentation */,
+				74B5F92520E7D1E1007C8738 /* README.initialize */,
+				74B5F92620E7D1E1007C8738 /* standalone.conf */,
+				74B5F92720E7D1E1007C8738 /* configure.ac */,
+				74B5F92820E7D1E1007C8738 /* Tools */,
+				74B5F92920E7D1E1007C8738 /* INSTALL */,
+				74B5F92A20E7D1E1007C8738 /* ANNOUNCE */,
+				74B5F92B20E7D1E1007C8738 /* .DS_Store */,
+				74B5F92C20E7D1E1007C8738 /* configure */,
+				74B5F92D20E7D1E1007C8738 /* ChangeLog */,
+				74B5F92E20E7D1E1007C8738 /* ChangeLog.2 */,
+				74B5F92F20E7D1E1007C8738 /* config */,
+				74B5F93020E7D1E1007C8738 /* Makefile */,
+				74B5F93120E7D1E1007C8738 /* install.sh */,
+				74B5F93220E7D1E1007C8738 /* base.make.in */,
+				74B5F93320E7D1E1007C8738 /* Resources */,
+				74B5F93420E7D1E1007C8738 /* Source */,
+				74B5F93520E7D1E1007C8738 /* cross.config */,
+				74B5F93620E7D1E1007C8738 /* Tests */,
+				74B5F93720E7D1E1007C8738 /* gnustep-base.spec.old */,
+				74B5F93820E7D1E1007C8738 /* gnustep-base.spec.in */,
+				74B5F93920E7D1E1007C8738 /* Makefile.postamble */,
+				74B5F93A20E7D1E1007C8738 /* README */,
+				74B5F93B20E7D1E1007C8738 /* COPYING.LIB */,
+				74B5F93C20E7D1E1007C8738 /* COPYING */,
+				74B5F93D20E7D1E1007C8738 /* NEWS */,
+				74B5F93E20E7D1E1007C8738 /* Support */,
+				74B5F93F20E7D1E1007C8738 /* Version */,
+				74B5F94020E7D1E1007C8738 /* Headers */,
+				74B5F94120E7D1E1007C8738 /* macosx */,
+				74B5F94220E7D1E1007C8738 /* Examples */,
+				74B5F94320E7D1E1007C8738 /* travis-deps.sh */,
+				74B5F94420E7D1E1007C8738 /* ChangeLog.1 */,
+				74B5F94520E7D1E1007C8738 /* config.mak.in */,
+				74B5F94620E7D1E1007C8738 /* base.xcodeproj */,
+				74B5F94920E7D1E1007C8738 /* .travis.yml */,
+				74B5F94A20E7D1E1007C8738 /* NSTimeZones */,
+				74B5F94B20E7D1E1007C8738 /* .cvsignore */,
+				74B5F94C20E7D1E1007C8738 /* gnustep-base.script.spec.in */,
+				74B5F94D20E7D1E1007C8738 /* COPYINGv3 */,
+			);
+			sourceTree = "<group>";
+		};
+		74B5F94720E7D1E1007C8738 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74B5F95120E7D1E1007C8738 /* Foundation.framework */,
+				74B5F95320E7D1E1007C8738 /* gdnc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		74B5F92120E7D1E1007C8738 /* gnustep-base-1.25.0 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 74B5F95420E7D1E1007C8738 /* Build configuration list for PBXLegacyTarget "gnustep-base-1.25.0" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/chen/Desktop/知识/小码哥视频/gnustep-base-1.25.0";
+			dependencies = (
+			);
+			name = "gnustep-base-1.25.0";
+			passBuildSettingsInEnvironment = 1;
+			productName = "gnustep-base-1.25.0";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		74B5F91D20E7D1E1007C8738 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 74B5F92020E7D1E1007C8738 /* Build configuration list for PBXProject "gnustep-base-1.25.0" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 74B5F91C20E7D1E1007C8738;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 74B5F94720E7D1E1007C8738 /* Products */;
+					ProjectRef = 74B5F94620E7D1E1007C8738 /* base.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				74B5F92120E7D1E1007C8738 /* gnustep-base-1.25.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		74B5F95120E7D1E1007C8738 /* Foundation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Foundation.framework;
+			remoteRef = 74B5F95020E7D1E1007C8738 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74B5F95320E7D1E1007C8738 /* gdnc */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = gdnc;
+			remoteRef = 74B5F95220E7D1E1007C8738 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin XCBuildConfiguration section */
+		74B5F91E20E7D1E1007C8738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		74B5F91F20E7D1E1007C8738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		74B5F95520E7D1E1007C8738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "gnustep-base-1.25.0";
+			};
+			name = Debug;
+		};
+		74B5F95620E7D1E1007C8738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "gnustep-base-1.25.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74B5F92020E7D1E1007C8738 /* Build configuration list for PBXProject "gnustep-base-1.25.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74B5F91E20E7D1E1007C8738 /* Debug */,
+				74B5F91F20E7D1E1007C8738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74B5F95420E7D1E1007C8738 /* Build configuration list for PBXLegacyTarget "gnustep-base-1.25.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74B5F95520E7D1E1007C8738 /* Debug */,
+				74B5F95620E7D1E1007C8738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74B5F91D20E7D1E1007C8738 /* Project object */;
+}

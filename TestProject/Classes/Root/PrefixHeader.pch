@@ -1,0 +1,53 @@
+//
+//  PrefixHeader.pch
+//  TestProject
+//
+//  Created by chen on 7/7/18.
+//  Copyright © 2018 fourye. All rights reserved.
+//
+
+#define weak(x) @weakify(x)
+#define strong(x) @strongify(x)
+
+#ifndef weakify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+#else
+#define weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+#else
+#define weakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+#endif
+#endif
+#endif
+
+#ifndef strongify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define strongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object) try{} @finally{} __typeof__(object) object = block##_##object;
+#endif
+#endif
+#endif
+
+//#define NSLog(...) SFLog(__VA_ARGS__)
+#define ADD_CELL(title, SEL) [self addCellWithTitle:title selector:@selector(SEL)]
+
+#import "SFLogManager.h"
+#import <YYKit/UIView+YYAdd.h>
+#import "UIColor+Extension.h"
+#import "BaseColletionViewController.h"
+#import "YYCGUtilities.h"
+#import "UIView+Extension.h"
+
