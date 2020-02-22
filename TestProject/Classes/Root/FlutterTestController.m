@@ -22,11 +22,9 @@
 
 - (void)handleOpenFlutter {
     FlutterViewController *flutterViewController = [[FlutterViewController alloc] init];
-    [flutterViewController setInitialRoute:@"flutterViewController"];
+    [flutterViewController setInitialRoute:@"/MessagePage"];
     flutterViewController.view.backgroundColor = [UIColor blackColor];
-//    [flutterViewController setInitialRoute:@"route1"];
-    [self.navigationController pushViewController:flutterViewController animated:YES];
-
+    [self presentViewController:flutterViewController animated:YES completion:nil];
 }
 
 
