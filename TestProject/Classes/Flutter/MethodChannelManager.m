@@ -8,9 +8,7 @@
 
 #import "MethodChannelManager.h"
 
-@interface Messenger : NSObject <FlutterBinaryMessenger>
 
-@end
 
 @implementation Messenger
 
@@ -32,6 +30,7 @@
 
 @property (nonatomic, strong) FlutterMethodChannel *methodChannel;
 
+
 @end
 
 @implementation MethodChannelManager
@@ -40,12 +39,15 @@ singleton_m(MethodChannelManager)
 
 - (instancetype)init {
     if (self = [super init]) {
-        self.methodChannel = [FlutterMethodChannel methodChannelWithName:@"xxx1" binaryMessenger:Messenger.alloc.init];
-        [self.methodChannel setMethodCallHandler:^(FlutterMethodCall * _Nonnull call, FlutterResult  _Nonnull result) {
-            
-        }];
+        self.methodChannel = [FlutterMethodChannel methodChannelWithName:@"samples.flutter.io/battery" binaryMessenger:Messenger.alloc.init];
     }
     return self;
+}
+
+- (void)messageMethod:(MethodCall)methodCall {
+    [self.methodChannel setMethodCallHandler:^(FlutterMethodCall * _Nonnull call, FlutterResult  _Nonnull result) {
+        methodCall(call, result);
+    }];
 }
 
 + (instancetype)manager {

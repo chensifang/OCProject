@@ -9,6 +9,7 @@
 #import "FlutterTestController.h"
 #import <Flutter/Flutter.h>
 #import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
+#import "MethodChannelManager.h"
 
 @interface FlutterTestController ()
 
@@ -26,19 +27,10 @@
     [controller setInitialRoute:@"/MessagePage"];
     controller.view.backgroundColor = [UIColor blackColor];
     [self presentViewController:controller animated:YES completion:nil];
-    
-    [GeneratedPluginRegistrant registerWithRegistry:controller];
-    FlutterMethodChannel* batteryChannel = [FlutterMethodChannel methodChannelWithName:@"samples.flutter.io/battery" binaryMessenger:controller.binaryMessenger];
-    [batteryChannel setMethodCallHandler:^(FlutterMethodCall * _Nonnull call, FlutterResult  _Nonnull result) {
-        if ([@"getBatteryLevel" isEqualToString:call.method]) {
-            int batteryLevel = [self getBatteryLabel];
-            if (batteryLevel == -1) {
-                result( [FlutterError errorWithCode:@"UNAVAILABLE" message:@"Battery info unavailable" details:nil]);
-            } else {
-                result (@(batteryLevel));
-            }
-        } else {
-            result(FlutterMethodNotImplemented);
+    FlutterMethodChannel *methodChannel = [FlutterMethodChannel methodChannelWithName:@"samples.flutter.io/battery" binaryMessenger:controller.binaryMessenger];
+    [methodChannel setMethodCallHandler:^(FlutterMethodCall * _Nonnull call, FlutterResult  _Nonnull result) {
+        if ([call.method isEqualToString:@"getBatteryLevel"]) {
+            result(@[@([self getBatteryLabel]), @1, @2]);
         }
     }];
 }
