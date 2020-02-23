@@ -7,11 +7,13 @@
 //
 
 #import "FlutterTestController.h"
+#import "FlutterTestController.h"
 #import <Flutter/Flutter.h>
 #import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
-#import "MethodChannelManager.h"
 
 @interface FlutterTestController ()
+
+@property (nonatomic, strong) FlutterViewController *controller;
 
 @end
 
@@ -20,10 +22,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     ADD_CELL(@"跳转 flutter",handleOpenFlutter);
+    ADD_CELL(@"调用 flutter goback", callFlutterGoback);
+}
+
+- (void)callFlutterGoback {
+    //
+    FlutterMethodChannel *methodChannel = [FlutterMethodChannel methodChannelWithName:@"samples.flutter.io/battery" binaryMessenger:self.controller.binaryMessenger];
+    [methodChannel invokeMethod:@"goback" arguments:@{@"number": @"1"} result:^(id  _Nullable result) {
+        NSLog(@"%@", result);
+        if ([result isEqualToString:@"gobackError"]) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }];
 }
 
 - (void)handleOpenFlutter {
     FlutterViewController *controller = [[FlutterViewController alloc] init];
+    self.controller = controller;
     [controller setInitialRoute:@"/MessagePage"];
     controller.view.backgroundColor = [UIColor blackColor];
     [self presentViewController:controller animated:YES completion:nil];

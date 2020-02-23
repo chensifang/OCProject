@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Flutter/Flutter.h>
 
 #define ADD_SECTION(title) [self addSectionTitle:title];
 
