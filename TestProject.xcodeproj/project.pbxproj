@@ -115,6 +115,7 @@
 		C9227B1323007D460075E091 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C9227B1223007D460075E091 /* MyButton.m */; };
 		C923296F23080EFA0064A739 /* DisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = C923296E23080EFA0064A739 /* DisplayController.m */; };
 		C9246BA5238D00BD00F101EA /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = C9246BA4238D00BD00F101EA /* Object.m */; };
+		C92B94EA240292F300872C50 /* MethodChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C92B94E9240292F300872C50 /* MethodChannelManager.m */; };
 		C94F4DBA22FE856D0050FCC4 /* DataStructController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DB922FE856D0050FCC4 /* DataStructController.m */; };
 		C94F4DCE22FE85F20050FCC4 /* LinearListController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DCD22FE85F20050FCC4 /* LinearListController.m */; };
 		C94F4DD122FE86C50050FCC4 /* ArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DD022FE86C50050FCC4 /* ArrayList.m */; };
@@ -2211,6 +2212,9 @@
 		C923296E23080EFA0064A739 /* DisplayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayController.m; sourceTree = "<group>"; };
 		C9246BA3238D00BD00F101EA /* Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
 		C9246BA4238D00BD00F101EA /* Object.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
+		C92B94E8240292F300872C50 /* MethodChannelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodChannelManager.h; sourceTree = "<group>"; };
+		C92B94E9240292F300872C50 /* MethodChannelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodChannelManager.m; sourceTree = "<group>"; };
+		C92B94FC2402939B00872C50 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		C94F4DB822FE856D0050FCC4 /* DataStructController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructController.h; sourceTree = "<group>"; };
 		C94F4DB922FE856D0050FCC4 /* DataStructController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStructController.m; sourceTree = "<group>"; };
 		C94F4DCC22FE85F20050FCC4 /* LinearListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearListController.h; sourceTree = "<group>"; };
@@ -2791,6 +2795,7 @@
 		748A236020D2AD76006C2988 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C92B94FC2402939B00872C50 /* Singleton.h */,
 				748A236120D2ADA7006C2988 /* NSObject+Extension.h */,
 				748A236220D2ADA7006C2988 /* NSObject+Extension.m */,
 				7419BDD220DCC3F000F5D608 /* NSTimer+Extension.h */,
@@ -5877,6 +5882,8 @@
 			children = (
 				C9750F1D240263A2001726DC /* NativeFlutterVC.h */,
 				C9750F1E240263A2001726DC /* NativeFlutterVC.m */,
+				C92B94E8240292F300872C50 /* MethodChannelManager.h */,
+				C92B94E9240292F300872C50 /* MethodChannelManager.m */,
 			);
 			path = Flutter;
 			sourceTree = "<group>";
@@ -6324,6 +6331,7 @@
 				C9227AC722FF164D0075E091 /* CoreAnimationController.m in Sources */,
 				7409E7FD21060D5900ABEAC2 /* SFScrollView.m in Sources */,
 				7419BDD120DC965F00F5D608 /* RunloopOb.m in Sources */,
+				C92B94EA240292F300872C50 /* MethodChannelManager.m in Sources */,
 				7467AAF720F065E30025B402 /* BaseViewController.m in Sources */,
 				C9227B1323007D460075E091 /* MyButton.m in Sources */,
 				74E7EE93214F8DBA007AAB8B /* DataController.m in Sources */,

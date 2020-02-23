@@ -50,4 +50,5 @@
 #import "BaseColletionViewController.h"
 #import "YYCGUtilities.h"
 #import "UIView+Extension.h"
+#import "Singleton.h"
 

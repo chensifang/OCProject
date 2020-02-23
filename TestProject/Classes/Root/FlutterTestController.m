@@ -10,7 +10,7 @@
 #import <Flutter/Flutter.h>
 #import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
 
-@interface FlutterTestController ()<FlutterPluginRegistry>
+@interface FlutterTestController ()
 
 @end
 
@@ -27,9 +27,8 @@
     controller.view.backgroundColor = [UIColor blackColor];
     [self presentViewController:controller animated:YES completion:nil];
     
-    [GeneratedPluginRegistrant registerWithRegistry:self];
-    static FlutterMethodChannel* batteryChannel;
-    batteryChannel = [FlutterMethodChannel methodChannelWithName:@"samples.flutter.io/battery" binaryMessenger:controller];
+    [GeneratedPluginRegistrant registerWithRegistry:controller];
+    FlutterMethodChannel* batteryChannel = [FlutterMethodChannel methodChannelWithName:@"samples.flutter.io/battery" binaryMessenger:controller.binaryMessenger];
     [batteryChannel setMethodCallHandler:^(FlutterMethodCall * _Nonnull call, FlutterResult  _Nonnull result) {
         if ([@"getBatteryLevel" isEqualToString:call.method]) {
             int batteryLevel = [self getBatteryLabel];
