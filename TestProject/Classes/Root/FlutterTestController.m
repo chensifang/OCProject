@@ -14,6 +14,7 @@
 @interface FlutterTestController ()
 
 @property (nonatomic, strong) FlutterViewController *controller;
+@property (nonatomic, strong) FlutterMethodChannel *methodChannel;
 
 @end
 
@@ -23,11 +24,43 @@
     [super viewDidLoad];
     ADD_CELL(@"跳转 flutter",handleOpenFlutter);
     ADD_CELL(@"调用 flutter goback", callFlutterGoback);
+    ADD_CELL(@"跳转新 flutter", pushNewFultter);
+}
+
+- (void)pushNewFultter {
+    FlutterViewController *controller = [[FlutterViewController alloc] init];
+    [controller setInitialRoute:@"/MessagePage"];
+    controller.view.backgroundColor = [UIColor blackColor];
+    FlutterMethodChannel *methodChannel = [FlutterMethodChannel methodChannelWithName:@"samples.flutter.io/battery" binaryMessenger:controller.binaryMessenger];
+    [self presentViewController:controller animated:YES completion:^{
+//        [methodChannel invokeMethod:@"goback" arguments:@{@"number": @"1"} result:^(id  _Nullable result) {
+//            NSLog(@"%@", result);
+//            if ([result isEqualToString:@"gobackError"]) {
+//                [self.navigationController popViewControllerAnimated:YES];
+//            }
+//        }];
+    }];
+    [methodChannel invokeMethod:@"goback" arguments:@{@"number": @"1"} result:^(id  _Nullable result) {
+        NSLog(@"%@", result);
+        if ([result isEqualToString:@"gobackError"]) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }];
+
+   
+//    [self.methodChannel invokeMethod:@"goback" arguments:@{@"number": @"1"} result:^(id  _Nullable result) {
+//        NSLog(@"%@", result);
+//        if ([result isEqualToString:@"gobackError"]) {
+//            [self.navigationController popViewControllerAnimated:YES];
+//        }
+//    }];
+    
 }
 
 - (void)callFlutterGoback {
     //
     FlutterMethodChannel *methodChannel = [FlutterMethodChannel methodChannelWithName:@"samples.flutter.io/battery" binaryMessenger:self.controller.binaryMessenger];
+    self.methodChannel = methodChannel;
     [methodChannel invokeMethod:@"goback" arguments:@{@"number": @"1"} result:^(id  _Nullable result) {
         NSLog(@"%@", result);
         if ([result isEqualToString:@"gobackError"]) {
