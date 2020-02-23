@@ -120,6 +120,7 @@
 		C94F4DD122FE86C50050FCC4 /* ArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DD022FE86C50050FCC4 /* ArrayList.m */; };
 		C94F4DF822FFCFA50050FCC4 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DF722FFCFA50050FCC4 /* NSArray+log.m */; };
 		C95C6FD323C43860002507D9 /* FlutterTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C6FD223C43860002507D9 /* FlutterTestController.m */; };
+		C9750F1F240263A2001726DC /* NativeFlutterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9750F1E240263A2001726DC /* NativeFlutterVC.m */; };
 		C988B29E23B20D5F007C8108 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C988B29D23B20D5F007C8108 /* RACViewController.m */; };
 		C98E7CB02302BDEA00022D78 /* image1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C98E7CAC2302BDE900022D78 /* image1.jpeg */; };
 		C98E7CB12302BDEA00022D78 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C98E7CAD2302BDE900022D78 /* image3.jpg */; };
@@ -2220,6 +2221,8 @@
 		C94F4DF722FFCFA50050FCC4 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+log.m"; path = "../../../../TestProject/TestProject/Classes/算法/NSArray+log.m"; sourceTree = "<group>"; };
 		C95C6FD123C43860002507D9 /* FlutterTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlutterTestController.h; sourceTree = "<group>"; };
 		C95C6FD223C43860002507D9 /* FlutterTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterTestController.m; sourceTree = "<group>"; };
+		C9750F1D240263A2001726DC /* NativeFlutterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeFlutterVC.h; sourceTree = "<group>"; };
+		C9750F1E240263A2001726DC /* NativeFlutterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeFlutterVC.m; sourceTree = "<group>"; };
 		C988B29C23B20D5F007C8108 /* RACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
 		C988B29D23B20D5F007C8108 /* RACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
 		C98E7CAC2302BDE900022D78 /* image1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpeg; sourceTree = "<group>"; };
@@ -2288,6 +2291,7 @@
 		7404E92E2127D3A5000FE491 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C9750F0B2402638C001726DC /* Flutter */,
 				749433DA20EF9D090072B27F /* Root */,
 				74B5F91420E7CCF8007C8738 /* UIKit */,
 				74BE1775212FED8D00E7F8C9 /* 三方库 */,
@@ -5868,6 +5872,15 @@
 			path = "线性表";
 			sourceTree = "<group>";
 		};
+		C9750F0B2402638C001726DC /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				C9750F1D240263A2001726DC /* NativeFlutterVC.h */,
+				C9750F1E240263A2001726DC /* NativeFlutterVC.m */,
+			);
+			path = Flutter;
+			sourceTree = "<group>";
+		};
 		C98E7C9A2302BDD800022D78 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -6304,6 +6317,7 @@
 				742E304C213F7AFF00027503 /* TouchBlueView.m in Sources */,
 				745622732104AEA400DEAB33 /* GestureModel.m in Sources */,
 				749433E020EFA08B0072B27F /* UITestTableController.m in Sources */,
+				C9750F1F240263A2001726DC /* NativeFlutterVC.m in Sources */,
 				748ADA812133986800574D88 /* SessionViewController.m in Sources */,
 				7416622C2102F90C009895F6 /* UIView+Extension.m in Sources */,
 				74AC3279211EF9520070FD7B /* BlockObj.m in Sources */,

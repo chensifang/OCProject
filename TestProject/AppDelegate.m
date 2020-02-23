@@ -28,7 +28,6 @@ TouchMethods
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     freopen("/dev/null","w",stdout);
     freopen("/dev/null","w",stdin);
-    [GeneratedPluginRegistrant registerWithRegistry:self];
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     TabbarController *tabbarController = [[TabbarController alloc] init];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:tabbarController];
@@ -36,6 +35,8 @@ TouchMethods
     self.window.backgroundColor = [UIColor whiteColor];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
