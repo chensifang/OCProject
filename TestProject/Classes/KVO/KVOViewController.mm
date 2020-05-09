@@ -23,6 +23,7 @@
     ADD_CELL(@"手动 KVO" , manualKVO);
     ADD_CELL(@"KVO isa混写" , swizzilingTest);
     ADD_CELL(@"KVC 触发 KVO" , fromKVC);
+    ADD_CELL(@"KVC 直接成员变量触发 KVO" , _fromKVC);
     ADD_CELL(@"setter 触发 KVO" , hitKVO);
     [self addObserver:self forKeyPath:@"string" options:(NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew) context:NULL];
     ADD_CELL(@"KVO观察数组元素" , observerArray);
@@ -68,6 +69,15 @@
 //    self.string = @"haha";
     [self setValue:@"haha" forKey:@"string"];
 }
+
+// 触发不了 KVO
+- (void)_fromKVC {
+//    self.string = @"haha";
+    NSLog(@"string: %@", _string);
+    [self setValue:@"haha" forKey:@"_string"];
+    NSLog(@"string: %@", _string);
+}
+
 
 #pragma mark - ---- KVO isa_swizziling
 - (void)swizzilingTest {
