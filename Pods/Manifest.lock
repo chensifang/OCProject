@@ -47,7 +47,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://git.coding.net/fourye/Specs.git:
     - SFLog
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - Aspects
     - fishhook
@@ -79,4 +79,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: c5d1d3a4161ab22d2c2b349bc01825bc866a404e
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.3

@@ -33,6 +33,8 @@
     ADD_SECTION(@"新组")
     [self addCellWithTitle:@"新控制器" nextVC:@"DataController"];
     [self addCellWithTitle:@"测试 flutter" nextVC:@"FlutterTestController"];
+    ADD_SECTION(@"动态下发二进制图")
+    [self addCellWithTitle:@"下发二进制图" nextVC:@"DynamicImageController"];
     
 }
 

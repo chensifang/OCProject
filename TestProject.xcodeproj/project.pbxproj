@@ -119,6 +119,7 @@
 		C94F4DCE22FE85F20050FCC4 /* LinearListController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DCD22FE85F20050FCC4 /* LinearListController.m */; };
 		C94F4DD122FE86C50050FCC4 /* ArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DD022FE86C50050FCC4 /* ArrayList.m */; };
 		C94F4DF822FFCFA50050FCC4 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DF722FFCFA50050FCC4 /* NSArray+log.m */; };
+		C9517B0C2491275F00DA387C /* DynamicImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9517B0B2491275F00DA387C /* DynamicImageController.m */; };
 		C95C6FD323C43860002507D9 /* FlutterTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C6FD223C43860002507D9 /* FlutterTestController.m */; };
 		C988B29E23B20D5F007C8108 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C988B29D23B20D5F007C8108 /* RACViewController.m */; };
 		C98E7CB02302BDEA00022D78 /* image1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C98E7CAC2302BDE900022D78 /* image1.jpeg */; };
@@ -2205,6 +2206,8 @@
 		C94F4DD022FE86C50050FCC4 /* ArrayList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayList.m; sourceTree = "<group>"; };
 		C94F4DF622FFCFA50050FCC4 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+log.h"; path = "../../../../TestProject/TestProject/Classes/算法/NSArray+log.h"; sourceTree = "<group>"; };
 		C94F4DF722FFCFA50050FCC4 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+log.m"; path = "../../../../TestProject/TestProject/Classes/算法/NSArray+log.m"; sourceTree = "<group>"; };
+		C9517B0A2491275F00DA387C /* DynamicImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicImageController.h; sourceTree = "<group>"; };
+		C9517B0B2491275F00DA387C /* DynamicImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicImageController.m; sourceTree = "<group>"; };
 		C95C6FD123C43860002507D9 /* FlutterTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlutterTestController.h; sourceTree = "<group>"; };
 		C95C6FD223C43860002507D9 /* FlutterTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterTestController.m; sourceTree = "<group>"; };
 		C988B29C23B20D5F007C8108 /* RACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
@@ -5479,6 +5482,7 @@
 		74B5F91420E7CCF8007C8738 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C9517AF82491274200DA387C /* 动态下发图 */,
 				749433DE20EFA08B0072B27F /* UITestTableController.h */,
 				749433DF20EFA08B0072B27F /* UITestTableController.m */,
 				742E3043213F7A5B00027503 /* Touch传递响应 */,
@@ -5839,6 +5843,15 @@
 				C94F4DD022FE86C50050FCC4 /* ArrayList.m */,
 			);
 			path = "线性表";
+			sourceTree = "<group>";
+		};
+		C9517AF82491274200DA387C /* 动态下发图 */ = {
+			isa = PBXGroup;
+			children = (
+				C9517B0A2491275F00DA387C /* DynamicImageController.h */,
+				C9517B0B2491275F00DA387C /* DynamicImageController.m */,
+			);
+			path = "动态下发图";
 			sourceTree = "<group>";
 		};
 		C9750F0B2402638C001726DC /* Flutter */ = {
@@ -6230,6 +6243,7 @@
 				C9246BA5238D00BD00F101EA /* Object.m in Sources */,
 				748C56FB212D641E00978F54 /* IsaViewController.mm in Sources */,
 				74F1C42520DF4D0B00333F5C /* SFSubview1.m in Sources */,
+				C9517B0C2491275F00DA387C /* DynamicImageController.m in Sources */,
 				C923296F23080EFA0064A739 /* DisplayController.m in Sources */,
 				7467AAF120F04CE60025B402 /* NavTestTableController.m in Sources */,
 				74D6D6D620F6328D00BDBA80 /* KVOViewController.mm in Sources */,
