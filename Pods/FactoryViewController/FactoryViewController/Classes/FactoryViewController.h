@@ -7,18 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Flutter/Flutter.h>
 
 #define ADD_SECTION(title) [self addSectionTitle:title];
+#define ADD_CELL(title, SEL) [self addCellWithTitle:title selector:@selector(SEL)]
 
 
-@protocol BaseCollectionViewControllerDelegate <NSObject>
+@protocol FactoryViewControllerDelegateDelegate <NSObject>
 @optional
 - (void)reset;
 @end
 
 NS_ASSUME_NONNULL_BEGIN
-@interface BaseColletionViewController : UIViewController <BaseCollectionViewControllerDelegate>
+@interface FactoryViewController : UIViewController <FactoryViewControllerDelegateDelegate>
 
 @property (nonatomic, assign) BOOL partTable;
 @property (nonatomic, assign) CGFloat topHeight;

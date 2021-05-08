@@ -6,11 +6,11 @@
 //  Copyright © 2020 fourye. All rights reserved.
 //
 
-#import "BaseColletionViewController.h"
+#import  <FactoryViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DynamicImageController : BaseColletionViewController
+@interface DynamicImageController : FactoryViewController
 
 @end
 

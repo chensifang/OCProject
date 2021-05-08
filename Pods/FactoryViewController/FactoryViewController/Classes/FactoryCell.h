@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseCellModel.h"
+#import "FactorySectionModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseCell : UICollectionViewCell
+@interface FactoryCell : UICollectionViewCell
 @property (nonatomic, assign) BOOL hiddenLine;
 @property (nonatomic, assign) BOOL longBottomLine;
-- (void)updateWithModel:(BaseCellModel *)model center:(BOOL)center;
+- (void)updateWithModel:(FactoryCellModel *)model center:(BOOL)center;
 @end
 
 NS_ASSUME_NONNULL_END

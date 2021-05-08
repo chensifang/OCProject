@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseColletionViewController.h"
-@interface OCStructViewController : BaseColletionViewController
+#import  <FactoryViewController.h>
+@interface OCStructViewController : FactoryViewController
 
 
 @end

@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-#import "BaseColletionViewController.h"
+#import  <FactoryViewController.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LayerViewController : BaseColletionViewController
+@interface LayerViewController : FactoryViewController
 
 @end
 

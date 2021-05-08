@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseColletionViewController.h"
+#import  <FactoryViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BitmapViewController : BaseColletionViewController 
+@interface BitmapViewController : FactoryViewController 
 
 @end
 

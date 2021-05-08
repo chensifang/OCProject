@@ -47,7 +47,7 @@
 #import "SFLogManager.h"
 #import <YYKit/UIView+YYAdd.h>
 #import "UIColor+Extension.h"
-#import "BaseColletionViewController.h"
+#import  <FactoryViewController.h>
 #import "YYCGUtilities.h"
 #import "UIView+Extension.h"
 #import "Singleton.h"

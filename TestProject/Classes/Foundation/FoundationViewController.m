@@ -16,7 +16,7 @@
 @end
 
 @implementation FoundationViewController
-@synthesize obj1 = _obj12;
+//@synthesize obj1 = _obj12;
 //@dynamic obj;
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -69,8 +69,8 @@
 #pragma mark - ---- 继承的成员变量问题
 - (void)memberTest {
     // 一个属性能生成2个成员变量，父类一个子类一个，并且 getter & setter 实现中的成员变量不同。子类父类调用 getter & setter 结果不同
-    NSLog(@"%@", _obj12);
-    NSLog(@"%@", super.obj1);
+//    NSLog(@"%@", _obj12);
+//    NSLog(@"%@", super.obj1);
 }
 
 #pragma mark - ---- 对象做 key

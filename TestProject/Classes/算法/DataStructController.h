@@ -6,11 +6,11 @@
 //  Copyright © 2019 fourye. All rights reserved.
 //
 
-#import "BaseColletionViewController.h"
+#import  <FactoryViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DataStructController : BaseColletionViewController
+@interface DataStructController : FactoryViewController
 
 @end
 

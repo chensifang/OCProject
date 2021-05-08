@@ -6,8 +6,8 @@
 //  Copyright © 2018 fourye. All rights reserved.
 //
 
-#import "BaseColletionViewController.h"
+#import  <FactoryViewController.h>
 
-@interface RunloopViewController : BaseColletionViewController
+@interface RunloopViewController : FactoryViewController
 
 @end

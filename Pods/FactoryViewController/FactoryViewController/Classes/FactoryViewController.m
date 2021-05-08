@@ -6,11 +6,10 @@
 //  Copyright © 2018 fourye. All rights reserved.
 //
 
-#import "BaseColletionViewController.h"
-#import "BaseCell.h"
-#import "NSObject+AOP.h"
-#import "NSObject+Extension.h"
-#import <ReactiveObjC.h>
+#import "FactoryViewController.h"
+#import "FactoryCell.h"
+#import "UIView+YYAdd.h"
+
 NSString *const arrow = @" →";
 const uint rowCount = 2;
 @interface CollectionHeader: UICollectionReusableView
@@ -30,13 +29,13 @@ const uint rowCount = 2;
 }
 @end
 
-@interface BaseColletionViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-@property (nonatomic, strong) NSMutableArray<BaseSectionModel *> *datas;
+@interface FactoryViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@property (nonatomic, strong) NSMutableArray<FactorySectionModel *> *datas;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UIView *line;
 @end
 
-@implementation BaseColletionViewController
+@implementation FactoryViewController
 void empty(void){};
 - (instancetype)initWithTitle:(NSString *)title {
     self = [super init];
@@ -80,7 +79,6 @@ void empty(void){};
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.obj1 = [[NSObject alloc] init];
     self.inCenter = YES;
     if ([self respondsToSelector:@selector(reset)]) {
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"重置" style:(UIBarButtonItemStylePlain) target:self action:@selector(reset)];
@@ -110,7 +108,7 @@ void empty(void){};
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.datas = @[].mutableCopy;
-    [self.collectionView registerClass:BaseCell.class forCellWithReuseIdentifier:@"baseCell"];
+    [self.collectionView registerClass:FactoryCell.class forCellWithReuseIdentifier:@"baseCell"];
 //    self.tableView.alwaysBounceVertical = NO;
 }
 
@@ -140,7 +138,7 @@ void empty(void){};
 
 #pragma mark - ---- 添加 section
 - (void)addSectionTitle:(NSString *)title {
-    BaseSectionModel *section = [[BaseSectionModel alloc] init];
+    FactorySectionModel *section = [[FactorySectionModel alloc] init];
     section.title = title;
     section.cellModels = @[].mutableCopy;
     [self.datas addObject:section];
@@ -149,7 +147,7 @@ void empty(void){};
 #pragma mark - ---- 添加cell
 - (void)addCellWithTitle:(NSString *)title nextVC:(NSString *)name {
     if (name.length == 0) return;
-    BaseCellModel *model = [BaseCellModel alloc].init;
+    FactoryCellModel *model = [FactoryCellModel alloc].init;
     model.title = [NSString stringWithFormat:@"%@%@", title, arrow];
     model.vcClass = NSClassFromString(name);
     if (model.vcClass == nil) {
@@ -162,7 +160,7 @@ void empty(void){};
 }
 
 - (void)addCellWithTitle:(NSString *)title func:(void(*)(void))func {
-    BaseCellModel *model = [BaseCellModel alloc].init;
+    FactoryCellModel *model = [FactoryCellModel alloc].init;
     model.title = title;
     model.func = func;
     if (self.datas.count == 0) {
@@ -172,7 +170,7 @@ void empty(void){};
 }
 
 - (void)addCellWithTitle:(NSString *)title block:(void(^)(void))block {
-    BaseCellModel *model = [BaseCellModel alloc].init;
+    FactoryCellModel *model = [FactoryCellModel alloc].init;
     model.title = title;
     model.block = block;
     if (self.datas.count == 0) {
@@ -182,7 +180,7 @@ void empty(void){};
 }
 
 - (void)addCellWithTitle:(NSString *)title selector:(SEL)sel {
-    BaseCellModel *model = [BaseCellModel alloc].init;
+    FactoryCellModel *model = [FactoryCellModel alloc].init;
     model.title = title;
     model.sel = sel;
     if (self.datas.count == 0) {
@@ -200,7 +198,7 @@ void empty(void){};
 
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    BaseCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"baseCell" forIndexPath:indexPath];
+    FactoryCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"baseCell" forIndexPath:indexPath];
     if (indexPath.row % rowCount == rowCount - 1) {
         cell.hiddenLine = YES;
     } else {
@@ -237,7 +235,7 @@ void empty(void){};
     return header;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    BaseCellModel *model = self.datas[indexPath.section].cellModels[indexPath.row];
+    FactoryCellModel *model = self.datas[indexPath.section].cellModels[indexPath.row];
     if (model.vcClass) {
         UIViewController *vc;
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
@@ -281,9 +279,9 @@ void empty(void){};
     [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
         textField.keyboardType = UIKeyboardTypeASCIICapable;
         [textField becomeFirstResponder];
-        [RACObserve(textField, text) subscribeNext:^(id  _Nullable x) {
-            string = x;
-        }];
+//        [RACObserve(textField, text) subscribeNext:^(id  _Nullable x) {
+//            string = x;
+//        }];
     }];
     
     [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {

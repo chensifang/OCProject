@@ -6,17 +6,17 @@
 //  Copyright © 2018 fourye. All rights reserved.
 //
 
-#import "BaseCell.h"
-#import <YYKit/UIView+YYAdd.h>
+#import "FactoryCell.h"
+#import "UIView+YYAdd.h"
 #import "UIColor+Extension.h"
 
-@interface BaseCell()
+@interface FactoryCell()
 @property (nonatomic, strong) UILabel *textLabel;
 @property (nonatomic, strong) UIView *line;
 @property (nonatomic, strong) UIView *bottomLine;
 @end
 
-@implementation BaseCell
+@implementation FactoryCell
 //- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 ////    [super touchesBegan:touches withEvent:event];
 //}
@@ -58,7 +58,7 @@ static const float margin = 10;
     return self;
 }
 
-- (void)updateWithModel:(BaseCellModel *)model center:(BOOL)center {
+- (void)updateWithModel:(FactoryCellModel *)model center:(BOOL)center {
 //    self.backgroundColor = kRandomColor;
     self.textLabel.text = model.title;
     self.textLabel.font = [UIFont systemFontOfSize:15];

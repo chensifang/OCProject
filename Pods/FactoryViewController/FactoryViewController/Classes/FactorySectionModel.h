@@ -1,5 +1,5 @@
 //
-//  BaseCellModel.h
+//  FactoryCellModel.h
 //  TestProject
 //
 //  Created by chen on 7/6/18.
@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@class BaseCellModel;
-@interface BaseSectionModel : NSObject
+@class FactoryCellModel;
+@interface FactorySectionModel : NSObject
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, strong) NSMutableArray<BaseCellModel *> *cellModels;
+@property (nonatomic, strong) NSMutableArray<FactoryCellModel *> *cellModels;
 @end
 
-@interface BaseCellModel : NSObject
+@interface FactoryCellModel : NSObject
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) Class vcClass;
 @property (nonatomic, assign) BOOL hasNext;

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseColletionViewController.h"
-@interface MMViewController : BaseColletionViewController
+#import  <FactoryViewController.h>
+@interface MMViewController : FactoryViewController
 
 @end

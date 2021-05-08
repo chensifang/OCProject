@@ -10,7 +10,6 @@
 #import <objc/runtime.h>
 #import "TouchHeader.h"
 #import "TabbarController.h"
-#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
 
 @interface AppDelegate ()
 
@@ -33,7 +32,7 @@ TouchMethods
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:tabbarController];
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
-    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+    return YES;
 }
 
 
