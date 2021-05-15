@@ -21,7 +21,6 @@
 @property (nonatomic, strong) NSFileHandle *fileHandle;
 @property (nonatomic, copy) NSString *filePath;
 
-
 @end
 
 @implementation SFLogManager

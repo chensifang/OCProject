@@ -13,6 +13,7 @@
 @implementation TouchButton
 
 TouchHitTest
+TouchPointInside
 
 - (instancetype)init {
     self = [TouchButton buttonWithType:0];

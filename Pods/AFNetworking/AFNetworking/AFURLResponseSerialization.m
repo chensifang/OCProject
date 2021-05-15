@@ -222,7 +222,7 @@ static id AFJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingO
     if (!self) {
         return nil;
     }
-    // HTTP 解析器默认接收下面这几种类型
+
     self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", nil];
 
     return self;
@@ -249,7 +249,7 @@ static id AFJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingO
     }
     
     NSError *serializationError = nil;
-    // json 解析处，用的也是系统的解析方法。
+    
     id responseObject = [NSJSONSerialization JSONObjectWithData:data options:self.readingOptions error:&serializationError];
 
     if (!responseObject)

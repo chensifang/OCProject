@@ -273,7 +273,6 @@
                                          failure:(void (^)(NSURLSessionDataTask *, NSError *))failure
 {
     NSError *serializationError = nil;
-    // 生成 request，内部解析拼接请求 url & 参数。
     NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:method URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters error:&serializationError];
     if (serializationError) {
         if (failure) {
@@ -286,7 +285,6 @@
     }
 
     __block NSURLSessionDataTask *dataTask = nil;
-//    利用 request 生成 dataTask
     dataTask = [self dataTaskWithRequest:request
                           uploadProgress:uploadProgress
                         downloadProgress:downloadProgress

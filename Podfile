@@ -5,13 +5,10 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'TestProject' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-  pod 'ReactiveObjC'
-  pod 'YYKit'
   pod 'Aspects'
-  pod 'SFLog'
   pod 'SDWebImage'
-  pod 'AFNetworking'
+  pod 'AFNetworking', '3.2.1'
   pod 'fishhook'
   pod 'RSSwizzle'
-  pod 'FactoryViewController'
+  pod 'SFCore'
 end

@@ -41,7 +41,7 @@
 #endif
 #endif
 
-//#define NSLog(...) SFLog(__VA_ARGS__)
+#define NSLog(...) SFLog(__VA_ARGS__)
 #define ADD_CELL(title, SEL) [self addCellWithTitle:title selector:@selector(SEL)]
 
 #import "SFLogManager.h"

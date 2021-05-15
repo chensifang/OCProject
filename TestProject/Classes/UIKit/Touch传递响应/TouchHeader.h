@@ -11,9 +11,17 @@
 
 #define TouchHitTest \
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {\
+    NSLog(@"%@ => begin", self.class);\
     UIView *hitView = [super hitTest:point withEvent:event];\
     NSLog(@"%@ => retutn: %@", self.class,hitView.class);\
     return hitView;\
+}
+
+#define TouchPointInside \
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {\
+    BOOL in = [super pointInside:point withEvent:event];\
+    NSLog(@"%@ => retutn: %d", self.class, in);\
+    return in;\
 }
 
 #define TouchMethods \

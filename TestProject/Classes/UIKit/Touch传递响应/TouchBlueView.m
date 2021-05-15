@@ -10,6 +10,8 @@
 
 @implementation TouchBlueView
 TouchHitTest
+TouchPointInside
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
     NSLog(@"%s", __func__);
     [super touchesBegan:touches withEvent:event];

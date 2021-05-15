@@ -41,7 +41,7 @@
      */
     //    UIImage *orginGif = [UIImage imageWithData:data scale:1];
     //    UIImage *images = orginGif.images;
-    UIImage *image = [UIImage sd_animatedGIFWithData:data];
+    UIImage *image = [UIImage sd_imageWithGIFData:data];
     
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.frame = CGRectMake(0, 0,kScreenWidth, self.topHeight);
