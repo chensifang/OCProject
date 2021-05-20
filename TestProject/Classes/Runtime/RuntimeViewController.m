@@ -9,7 +9,7 @@
 #import "RuntimeViewController.h"
 #import "Aspects.h"
 #import <objc/runtime.h>
-#import <ReactiveObjc.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 #import "NSObject+AOP.h"
 #import "SFObject.h"
 #import "Object.h"
