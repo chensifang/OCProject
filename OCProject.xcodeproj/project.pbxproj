@@ -110,7 +110,7 @@
 		C9227AC722FF164D0075E091 /* CoreAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9227AC622FF164D0075E091 /* CoreAnimationController.m */; };
 		C9227B1323007D460075E091 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C9227B1223007D460075E091 /* MyButton.m */; };
 		C923296F23080EFA0064A739 /* DisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = C923296E23080EFA0064A739 /* DisplayController.m */; };
-		C9246BA5238D00BD00F101EA /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = C9246BA4238D00BD00F101EA /* Object.m */; };
+		C9246BA5238D00BD00F101EA /* Object1.m in Sources */ = {isa = PBXBuildFile; fileRef = C9246BA4238D00BD00F101EA /* Object1.m */; };
 		C94F4DBA22FE856D0050FCC4 /* DataStructController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DB922FE856D0050FCC4 /* DataStructController.m */; };
 		C94F4DCE22FE85F20050FCC4 /* LinearListController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DCD22FE85F20050FCC4 /* LinearListController.m */; };
 		C94F4DD122FE86C50050FCC4 /* ArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DD022FE86C50050FCC4 /* ArrayList.m */; };
@@ -348,8 +348,8 @@
 		C9227B1223007D460075E091 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		C923296D23080EFA0064A739 /* DisplayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayController.h; sourceTree = "<group>"; };
 		C923296E23080EFA0064A739 /* DisplayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayController.m; sourceTree = "<group>"; };
-		C9246BA3238D00BD00F101EA /* Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
-		C9246BA4238D00BD00F101EA /* Object.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
+		C9246BA3238D00BD00F101EA /* Object1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Object1.h; sourceTree = "<group>"; };
+		C9246BA4238D00BD00F101EA /* Object1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Object1.m; sourceTree = "<group>"; };
 		C92B94FC2402939B00872C50 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		C94F4DB822FE856D0050FCC4 /* DataStructController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructController.h; sourceTree = "<group>"; };
 		C94F4DB922FE856D0050FCC4 /* DataStructController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStructController.m; sourceTree = "<group>"; };
@@ -486,8 +486,8 @@
 				74874D28210F3B3E00D423F2 /* NSObject+AOP.m */,
 				C9142416237BEE8200111589 /* FishhookViewController.h */,
 				C9142417237BEE8200111589 /* FishhookViewController.m */,
-				C9246BA3238D00BD00F101EA /* Object.h */,
-				C9246BA4238D00BD00F101EA /* Object.m */,
+				C9246BA3238D00BD00F101EA /* Object1.h */,
+				C9246BA4238D00BD00F101EA /* Object1.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -1189,7 +1189,7 @@
 				7467AAF720F065E30025B402 /* BaseViewController.m in Sources */,
 				C9227B1323007D460075E091 /* MyButton.m in Sources */,
 				74E7EE93214F8DBA007AAB8B /* DataController.m in Sources */,
-				C9246BA5238D00BD00F101EA /* Object.m in Sources */,
+				C9246BA5238D00BD00F101EA /* Object1.m in Sources */,
 				748C56FB212D641E00978F54 /* IsaViewController.mm in Sources */,
 				74F1C42520DF4D0B00333F5C /* SFSubview1.m in Sources */,
 				C9517B0C2491275F00DA387C /* DynamicImageController.m in Sources */,

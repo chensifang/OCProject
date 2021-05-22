@@ -8,7 +8,7 @@
 
 #import "FishhookViewController.h"
 #import <fishhook.h>
-#import "Object.h"
+#import "Object1.h"
 #import "NSObject+AOP.h"
 
 @interface FishhookViewController ()

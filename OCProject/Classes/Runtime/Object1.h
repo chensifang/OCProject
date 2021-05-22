@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Object : NSObject
+@interface Object1 : NSObject
 
 @property (atomic, assign) int intA;
 

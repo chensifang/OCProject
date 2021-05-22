@@ -12,10 +12,10 @@
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "NSObject+AOP.h"
 #import "SFObject.h"
-#import "Object.h"
+#import "Object1.h"
 
 @interface RuntimeViewController ()
-@property (nonatomic, strong) Object *obj;
+@property (nonatomic, strong) Object1 *obj;
 @property (nonatomic, strong) NSString *returnValue;
 @end
 
@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.obj = [[Object alloc] init];
+    self.obj = [[Object1 alloc] init];
     /** respondsToSelector 动态添加的方法也算，如果没有显式地实现方法，就走动态消息解析 resolveInstanceMethod  */
     [self addSectionTitle:@"HOOK"];
     ADD_CELL(@"AOP Hook 实例方法" ,myInstanceMethodHook);

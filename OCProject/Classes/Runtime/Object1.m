@@ -6,9 +6,9 @@
 //  Copyright © 2019 fourye. All rights reserved.
 //
 
-#import "Object.h"
+#import "Object1.h"
 
-@implementation Object
+@implementation Object1
 @synthesize intA = _intA;
 
 - (void)start {
