@@ -8,6 +8,19 @@
 
 #import "GCDViewController.h"
 
+@interface Model2 : NSObject
+@property (nonatomic, strong) id value;
+@end
+@implementation Model2
+@end
+
+@interface GCDViewController()
+
+
+@property (nonatomic, strong) NSMutableArray *arr;
+
+@end
+
 @implementation GCDViewController
 
 - (void)viewDidLoad {
@@ -21,6 +34,8 @@
     ADD_CELL(@"barrier_async", testAsyncBarrier);
     ADD_SECTION(@"信号量");
     ADD_CELL(@"信号量测试", semaphoreTest);
+    ADD_CELL(@"atomic", testAtomic);
+    ADD_CELL(@"atomic2", test7);
 }
 
 #pragma mark - ---- semaphore
@@ -50,26 +65,26 @@
     NSLog(@"end");
     
     // 2. 主队列 crash
-//    dispatch_apply(100, dispatch_get_main_queue(), ^(size_t index) {
-//        NSLog(@"%zu : %@", index, [NSThread currentThread]);
-//    });
-//    NSLog(@"end");
+    //    dispatch_apply(100, dispatch_get_main_queue(), ^(size_t index) {
+    //        NSLog(@"%zu : %@", index, [NSThread currentThread]);
+    //    });
+    //    NSLog(@"end");
     
     // 3. 自定义串行，顺序执行，执行完毕后走 end
-//    dispatch_apply(100, dispatch_queue_create("串行", DISPATCH_QUEUE_SERIAL), ^(size_t index) {
-//        NSLog(@"%zu : %@", index, [NSThread currentThread]);
-//    });
-//    NSLog(@"end");
-//    
-//    // 4. 自定义并发队列，并发执行，执行完毕后走 end
-//    __block int i = 0;
-//    dispatch_apply(100, dispatch_queue_create("并发", DISPATCH_QUEUE_CONCURRENT), ^(size_t index) {
-//        NSLog(@"%zu : %@", index, [NSThread currentThread]);
-//        if (index != i++) {
-//            NSLog(@"");
-//        }
-//    });
-//    NSLog(@"end");
+    //    dispatch_apply(100, dispatch_queue_create("串行", DISPATCH_QUEUE_SERIAL), ^(size_t index) {
+    //        NSLog(@"%zu : %@", index, [NSThread currentThread]);
+    //    });
+    //    NSLog(@"end");
+    //
+    //    // 4. 自定义并发队列，并发执行，执行完毕后走 end
+    //    __block int i = 0;
+    //    dispatch_apply(100, dispatch_queue_create("并发", DISPATCH_QUEUE_CONCURRENT), ^(size_t index) {
+    //        NSLog(@"%zu : %@", index, [NSThread currentThread]);
+    //        if (index != i++) {
+    //            NSLog(@"");
+    //        }
+    //    });
+    //    NSLog(@"end");
 }
 
 #pragma mark - ---- 异步串行（一道题）
@@ -175,6 +190,60 @@
         NSLog(@"2执行 %@", [NSThread currentThread]);
     });
     NSLog(@"3执行");
+}
+
+
+
+- (void)testAtomic {
+    self.slice = 0;
+    NSLock *lock = [NSLock new];
+    dispatch_queue_t queue = dispatch_queue_create("TestQueue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+//        [lock lock];
+        for (int i=0; i<10000; i++) {
+            self.slice = self.slice + 1;
+            NSLog(@"%d", self.slice);
+        }
+//        [lock unlock];
+    });
+    dispatch_async(queue, ^{
+//        [lock lock];
+        for (int i=0; i<10000; i++) {
+            self.slice = self.slice + 1;
+            NSLog(@"%d", self.slice);
+        }
+//        [lock unlock];
+    });
+}
+
+- (void)test7 {
+    dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
+    Model2 *m = [Model2 new];
+    SFLog(@"%@", @[@123,@123,@123,@123].class);
+    for (int i = 0; i < 100000; i++) {
+        dispatch_async(queue, ^{
+            m.value = @[@123,@123,@123,@123];
+            m.value = @[@123,@123,@123,@123];
+        });
+    }
+}
+
+- (void)test8 {
+    Model2 *m = [Model2 new];
+    dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
+
+//    for (int i = 0; i < 100000; i++) {
+//        dispatch_async(queue, ^{
+//            NSLog(@"%@", m.value);
+//        });
+//    }
+    
+    for (int i = 0; i < 100000; i++) {
+        m.value = @[@123,@123,@123,@123];
+    }
+    
+    
+    
 }
 
 

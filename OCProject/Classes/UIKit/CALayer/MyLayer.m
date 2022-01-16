@@ -34,6 +34,11 @@
     [super setPosition:position];
 }
 
+#pragma mark - 动态解析. 验证 yyyit 作者说的 layer 没有属性的问题
++ (BOOL)instancesRespondToSelector: (SEL)aSelector {
+    return YES;
+}
+
 #pragma mark - ---- 绘制相关
 - (void)setNeedsDisplay {
     NSLog(@"%s", __func__);

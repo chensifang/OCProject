@@ -82,7 +82,12 @@ struct my_objc_object {
         NSLog(@"%s", __func__);
     };
     __unused __weak void(^block1)(void) = block;
-    __unused my_objc_object *objc = (__bridge my_objc_object *)block;
+    
+    NSObject *obj = NSObject.alloc.init;
+    __weak NSObject *ob1 = obj;
+    __unused my_objc_object *objc = (__bridge my_objc_object *)obj;
+    [[NSNotificationCenter defaultCenter] addObserver:obj selector:@selector(xxx) name:@"" object:nil];
+    
     NSLog(@"");
 }
 

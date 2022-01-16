@@ -21,6 +21,7 @@
     [self addCellWithTitle:@"MRC 内存管理" nextVC:@"MRCViewController"];
     ADD_SECTION(@"OC 数据结构");
     [self addCellWithTitle:@"OC 数据结构" nextVC:@"OCStructViewController"];
+    [self addCellWithTitle:@"OC 内存占用" nextVC:@"ObjMemoryController"];
     [self addCellWithTitle:@"KVO" nextVC:@"KVOViewController"];
     [self addCellWithTitle:@"Runloop" nextVC:@"RunloopViewController"];
     [self addCellWithTitle:@"Runtime" nextVC:@"RuntimeViewController"];

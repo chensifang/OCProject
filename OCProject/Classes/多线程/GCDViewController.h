@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GCDViewController : FactoryViewController
 
+@property (atomic, assign) int slice;
+
 @end
 
 NS_ASSUME_NONNULL_END

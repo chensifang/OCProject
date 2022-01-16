@@ -29,6 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    ADD_SECTION(@"isa");
     ADD_CELL(@"模拟 isa" , testPointer);
     ADD_CELL(@"循环引用" , testRetainCircle);
     ADD_CELL(@"TaggedPoint 测试1" , testTaggedPoint);
@@ -39,6 +40,8 @@
     ADD_CELL(@"测试const" , testConst);
     [self addCellWithTitle:@"isa" nextVC:@"IsaViewController"];
 }
+
+
 
 #pragma mark - ---- 对象 C++ 结构
 - (void)whatIsObj {

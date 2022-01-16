@@ -40,6 +40,7 @@ extern int _objc_rootRetainCount(id);
     ADD_CELL(@"案例3", test3);
     ADD_CELL(@"案例4", test4);
     ADD_CELL(@"block 外部关联对象", assosatAndBlock);
+    ADD_CELL(@"测试通知强弱引用", testNotification);
 }
 
 - (void)dealloc {
@@ -149,6 +150,16 @@ struct __block_impl {
     int Reserved;
     void *FuncPtr;
 };
+
+#pragma mark - ---- testNotification
+- (void)testNotification {
+    NSObject *obj = [[NSObject alloc] init];
+    printRetainCount(obj);
+    NSObject *obj1 = obj;
+    printRetainCount(obj);
+    [[NSNotificationCenter defaultCenter] addObserver:obj selector:@selector(xxx) name:@"" object:nil];
+    printRetainCount(obj);
+}
 
 static struct __block_impl *blo;
 - (void)hookBlock {

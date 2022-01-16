@@ -115,7 +115,6 @@
 		C94F4DCE22FE85F20050FCC4 /* LinearListController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DCD22FE85F20050FCC4 /* LinearListController.m */; };
 		C94F4DD122FE86C50050FCC4 /* ArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F4DD022FE86C50050FCC4 /* ArrayList.m */; };
 		C9517B0C2491275F00DA387C /* DynamicImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9517B0B2491275F00DA387C /* DynamicImageController.m */; };
-		C95221C52646FDDD00B7F62C /* RootBase in Resources */ = {isa = PBXBuildFile; fileRef = C95221C42646FDDD00B7F62C /* RootBase */; };
 		C96E7C052658DE8F008285B7 /* NSArray+log.m in Sources */ = {isa = PBXBuildFile; fileRef = C96E7C042658DE8F008285B7 /* NSArray+log.m */; };
 		C96E7C072658DF0A008285B7 /* ICON.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C96E7C062658DF0A008285B7 /* ICON.JPG */; };
 		C988B29E23B20D5F007C8108 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C988B29D23B20D5F007C8108 /* RACViewController.m */; };
@@ -123,6 +122,8 @@
 		C98E7CB12302BDEA00022D78 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C98E7CAD2302BDE900022D78 /* image3.jpg */; };
 		C98E7CB22302BDEA00022D78 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C98E7CAE2302BDEA00022D78 /* image2.jpg */; };
 		C98E7CB32302BDEA00022D78 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C98E7CAF2302BDEA00022D78 /* image4.jpg */; };
+		C9B4E8A02792708E00434F0D /* Obj.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B4E89F2792708E00434F0D /* Obj.m */; };
+		C9B4E8A52792EF7100434F0D /* ObjMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B4E8A42792EF7100434F0D /* ObjMemoryController.m */; };
 		E579CAB31EFE0A5800123CE5 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E579CAB21EFE0A5800123CE5 /* main.mm */; };
 		E579CAB61EFE0A5800123CE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E579CAB51EFE0A5800123CE5 /* AppDelegate.m */; };
 		E579CAB91EFE0A5800123CE5 /* OCStructViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E579CAB81EFE0A5800123CE5 /* OCStructViewController.m */; };
@@ -359,7 +360,6 @@
 		C94F4DD022FE86C50050FCC4 /* ArrayList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayList.m; sourceTree = "<group>"; };
 		C9517B0A2491275F00DA387C /* DynamicImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicImageController.h; sourceTree = "<group>"; };
 		C9517B0B2491275F00DA387C /* DynamicImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicImageController.m; sourceTree = "<group>"; };
-		C95221C42646FDDD00B7F62C /* RootBase */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RootBase; sourceTree = "<group>"; };
 		C96E7C032658DE8F008285B7 /* NSArray+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+log.h"; sourceTree = "<group>"; };
 		C96E7C042658DE8F008285B7 /* NSArray+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+log.m"; sourceTree = "<group>"; };
 		C96E7C062658DF0A008285B7 /* ICON.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ICON.JPG; path = OCProject/Assets.xcassets/ICON.imageset/ICON.JPG; sourceTree = SOURCE_ROOT; };
@@ -369,6 +369,10 @@
 		C98E7CAD2302BDE900022D78 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
 		C98E7CAE2302BDEA00022D78 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
 		C98E7CAF2302BDEA00022D78 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		C9B4E89F2792708E00434F0D /* Obj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Obj.m; sourceTree = "<group>"; };
+		C9B4E8A12792BF5A00434F0D /* Obj-arm6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Obj-arm6.cpp"; sourceTree = "<group>"; };
+		C9B4E8A32792EF7100434F0D /* ObjMemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjMemoryController.h; sourceTree = "<group>"; };
+		C9B4E8A42792EF7100434F0D /* ObjMemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjMemoryController.m; sourceTree = "<group>"; };
 		E579CAAE1EFE0A5800123CE5 /* OCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E579CAB21EFE0A5800123CE5 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		E579CAB41EFE0A5800123CE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -424,7 +428,6 @@
 				74C6970720DB727400142F47 /* ReatinCircle */,
 				748A236020D2AD76006C2988 /* Extension */,
 				74FFFA3E20D1628300204375 /* Hash */,
-				C95221C42646FDDD00B7F62C /* RootBase */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -557,10 +560,14 @@
 		74563E7520DFCC82008CC14F /* OC数据结构 */ = {
 			isa = PBXGroup;
 			children = (
+				C9B4E89F2792708E00434F0D /* Obj.m */,
+				C9B4E8A12792BF5A00434F0D /* Obj-arm6.cpp */,
 				748C56F9212D641E00978F54 /* IsaViewController.h */,
 				748C56FA212D641E00978F54 /* IsaViewController.mm */,
 				E579CAB71EFE0A5800123CE5 /* OCStructViewController.h */,
 				E579CAB81EFE0A5800123CE5 /* OCStructViewController.m */,
+				C9B4E8A32792EF7100434F0D /* ObjMemoryController.h */,
+				C9B4E8A42792EF7100434F0D /* ObjMemoryController.m */,
 			);
 			path = "OC数据结构";
 			sourceTree = "<group>";
@@ -1094,7 +1101,6 @@
 				E579CABE1EFE0A5800123CE5 /* Assets.xcassets in Resources */,
 				C98E7CB32302BDEA00022D78 /* image4.jpg in Resources */,
 				748ADA862133CF1100574D88 /* thumb.png in Resources */,
-				C95221C52646FDDD00B7F62C /* RootBase in Resources */,
 				E579CABC1EFE0A5800123CE5 /* Main.storyboard in Resources */,
 				7460730A20EBC1B200589A45 /* RView.xib in Resources */,
 				C98E7CB02302BDEA00022D78 /* image1.jpeg in Resources */,
@@ -1141,6 +1147,7 @@
 				74FDA4D720DD3C53000418B8 /* ChatC.m in Sources */,
 				74FCFD8820F4A5BA00D0B890 /* MRCPort.m in Sources */,
 				C988B29E23B20D5F007C8108 /* RACViewController.m in Sources */,
+				C9B4E8A52792EF7100434F0D /* ObjMemoryController.m in Sources */,
 				741EA763210F146500FC5E3D /* RuntimeViewController.m in Sources */,
 				745E67CA20ED08D600D52FC0 /* BitmapViewController.m in Sources */,
 				7424FE1520DDDEE600274B85 /* ChatUDP.m in Sources */,
@@ -1229,6 +1236,7 @@
 				C91C9A5022B8D4FE008D2AD5 /* BlockCppController.mm in Sources */,
 				74FCFD8220F494D800D0B890 /* MRCViewController.m in Sources */,
 				7467AAF420F052970025B402 /* NavViewController.m in Sources */,
+				C9B4E8A02792708E00434F0D /* Obj.m in Sources */,
 				74874D26210F3AF200D423F2 /* TableView.m in Sources */,
 				742E3046213F7A8B00027503 /* TouchViewController.m in Sources */,
 				74017CA720E8CE170032169E /* LayerViewController.m in Sources */,
@@ -1378,6 +1386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MXA5F367FH;
+				EXCLUDED_ARCHS = "";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OCProject/Classes/Root/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/OCProject/Info.plist";
@@ -1394,6 +1403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 38T6QY52JB;
+				EXCLUDED_ARCHS = "";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OCProject/Classes/Root/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/OCProject/Info.plist";

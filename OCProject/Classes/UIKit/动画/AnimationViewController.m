@@ -29,6 +29,7 @@
     ADD_CELL(@"开始/暂停动画" , startAnimation);
     ADD_CELL(@"圆圈 loading 动画" , startAnimationLoadingCircle);
     ADD_CELL(@"layer 属性" , logLayerProperty);
+    ADD_CELL(@"layer 属性是否存在", testProperty);
     
     ADD_SECTION(@"layer 动画");
     ADD_CELL(@"layer 隐式动画" , implicitAnimation);
@@ -101,6 +102,14 @@ static int i = 0;
 }
 
 #pragma mark - ---- layer 属性
+- (void)testProperty {
+    MyLayer *layer = MyLayer.layer;
+    layer.frame = CGRectMake(200, 100, 100, 100);
+    layer.backgroundColor = [UIColor redColor].CGColor;
+    [self.view.layer addSublayer:layer];
+    self.layer = layer;
+}
+
 - (void)logLayerProperty {
     // 只有一个 ivar
     [CALayer logIvarsRecursion:YES];

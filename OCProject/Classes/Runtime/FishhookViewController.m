@@ -18,7 +18,7 @@
 @implementation FishhookViewController
 
 + (void)load {
-    rebind_symbols((struct rebinding[1]){{"NSLog", new_NSLog, (void *)&orig_NSLog}}, 1);
+//    rebind_symbols((struct rebinding[1]){{"NSLog", new_NSLog, (void *)&orig_NSLog}}, 1);
 }
 
 static void (*orig_NSLog)(NSString *format, ...);
