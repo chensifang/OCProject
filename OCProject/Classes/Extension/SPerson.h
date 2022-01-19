@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface SFPerson : NSObject <NSCopying>
+@interface SPerson : NSObject <NSCopying>
 
 @property (nonatomic, copy) NSString *name;
 + (instancetype)person;

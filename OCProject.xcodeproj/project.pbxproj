@@ -22,7 +22,7 @@
 		7418DF8B2150F3130063A499 /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7418DF8A2150F3130063A499 /* StackViewController.m */; };
 		7419BDD120DC965F00F5D608 /* RunloopOb.m in Sources */ = {isa = PBXBuildFile; fileRef = 7419BDD020DC965F00F5D608 /* RunloopOb.m */; };
 		7419BDD420DCC3F000F5D608 /* NSTimer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7419BDD320DCC3F000F5D608 /* NSTimer+Extension.m */; };
-		7419BDD720DCC50D00F5D608 /* SFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7419BDD620DCC50D00F5D608 /* SFPerson.m */; };
+		7419BDD720DCC50D00F5D608 /* SPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7419BDD620DCC50D00F5D608 /* SPerson.m */; };
 		7419BDDB20DCD23B00F5D608 /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7419BDDA20DCD23B00F5D608 /* MMViewController.m */; };
 		741EA763210F146500FC5E3D /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741EA762210F146400FC5E3D /* RuntimeViewController.m */; };
 		7424FE1520DDDEE600274B85 /* ChatUDP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7424FE1420DDDEE600274B85 /* ChatUDP.m */; };
@@ -124,6 +124,7 @@
 		C98E7CB32302BDEA00022D78 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C98E7CAF2302BDEA00022D78 /* image4.jpg */; };
 		C9B4E8A02792708E00434F0D /* Obj.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B4E89F2792708E00434F0D /* Obj.m */; };
 		C9B4E8A52792EF7100434F0D /* ObjMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B4E8A42792EF7100434F0D /* ObjMemoryController.m */; };
+		C9B4E8A82793CB5800434F0D /* OCClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B4E8A72793CB5800434F0D /* OCClassController.m */; };
 		E579CAB31EFE0A5800123CE5 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E579CAB21EFE0A5800123CE5 /* main.mm */; };
 		E579CAB61EFE0A5800123CE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E579CAB51EFE0A5800123CE5 /* AppDelegate.m */; };
 		E579CAB91EFE0A5800123CE5 /* OCStructViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E579CAB81EFE0A5800123CE5 /* OCStructViewController.m */; };
@@ -162,8 +163,8 @@
 		7419BDD020DC965F00F5D608 /* RunloopOb.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopOb.m; sourceTree = "<group>"; };
 		7419BDD220DCC3F000F5D608 /* NSTimer+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Extension.h"; sourceTree = "<group>"; };
 		7419BDD320DCC3F000F5D608 /* NSTimer+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Extension.m"; sourceTree = "<group>"; };
-		7419BDD520DCC50D00F5D608 /* SFPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPerson.h; sourceTree = "<group>"; };
-		7419BDD620DCC50D00F5D608 /* SFPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPerson.m; sourceTree = "<group>"; };
+		7419BDD520DCC50D00F5D608 /* SPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPerson.h; sourceTree = "<group>"; };
+		7419BDD620DCC50D00F5D608 /* SPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPerson.m; sourceTree = "<group>"; };
 		7419BDD920DCD23B00F5D608 /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
 		7419BDDA20DCD23B00F5D608 /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
 		741EA761210F146400FC5E3D /* RuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
@@ -373,6 +374,8 @@
 		C9B4E8A12792BF5A00434F0D /* Obj-arm6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Obj-arm6.cpp"; sourceTree = "<group>"; };
 		C9B4E8A32792EF7100434F0D /* ObjMemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjMemoryController.h; sourceTree = "<group>"; };
 		C9B4E8A42792EF7100434F0D /* ObjMemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjMemoryController.m; sourceTree = "<group>"; };
+		C9B4E8A62793CB5800434F0D /* OCClassController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCClassController.h; sourceTree = "<group>"; };
+		C9B4E8A72793CB5800434F0D /* OCClassController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCClassController.m; sourceTree = "<group>"; };
 		E579CAAE1EFE0A5800123CE5 /* OCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E579CAB21EFE0A5800123CE5 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		E579CAB41EFE0A5800123CE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -562,6 +565,8 @@
 			children = (
 				C9B4E89F2792708E00434F0D /* Obj.m */,
 				C9B4E8A12792BF5A00434F0D /* Obj-arm6.cpp */,
+				C9B4E8A62793CB5800434F0D /* OCClassController.h */,
+				C9B4E8A72793CB5800434F0D /* OCClassController.m */,
 				748C56F9212D641E00978F54 /* IsaViewController.h */,
 				748C56FA212D641E00978F54 /* IsaViewController.mm */,
 				E579CAB71EFE0A5800123CE5 /* OCStructViewController.h */,
@@ -674,8 +679,8 @@
 				748A236220D2ADA7006C2988 /* NSObject+Extension.m */,
 				7419BDD220DCC3F000F5D608 /* NSTimer+Extension.h */,
 				7419BDD320DCC3F000F5D608 /* NSTimer+Extension.m */,
-				7419BDD520DCC50D00F5D608 /* SFPerson.h */,
-				7419BDD620DCC50D00F5D608 /* SFPerson.m */,
+				7419BDD520DCC50D00F5D608 /* SPerson.h */,
+				7419BDD620DCC50D00F5D608 /* SPerson.m */,
 				74017CAB20E8D05F0032169E /* UIColor+Extension.h */,
 				74017CAC20E8D05F0032169E /* UIColor+Extension.m */,
 				7416622A2102F90C009895F6 /* UIView+Extension.h */,
@@ -1162,7 +1167,7 @@
 				C94F4DCE22FE85F20050FCC4 /* LinearListController.m in Sources */,
 				C96E7C052658DE8F008285B7 /* NSArray+log.m in Sources */,
 				749F9A5E20D151ED00224F4A /* KVOPerson.m in Sources */,
-				7419BDD720DCC50D00F5D608 /* SFPerson.m in Sources */,
+				7419BDD720DCC50D00F5D608 /* SPerson.m in Sources */,
 				74E7E3A22104AA4600B3BAF1 /* GreenView.m in Sources */,
 				C94F4DBA22FE856D0050FCC4 /* DataStructController.m in Sources */,
 				74E6F8A820DF448F005BF427 /* ResponseChainVC.m in Sources */,
@@ -1178,6 +1183,7 @@
 				7467A78420E4E9DC0034A784 /* AlgorithmViewController.m in Sources */,
 				74E7EE9C214F8F0F007AAB8B /* LibController.m in Sources */,
 				7451C14D2106F6630030833B /* TapGesture.m in Sources */,
+				C9B4E8A82793CB5800434F0D /* OCClassController.m in Sources */,
 				74E1667B2113450700CC273D /* SDTestViewController.m in Sources */,
 				C9227AAF22FEE86F0075E091 /* LinkListController.m in Sources */,
 				74FCFD8520F494F900D0B890 /* MRCPerson.m in Sources */,

@@ -20,8 +20,10 @@
     [self addCellWithTitle:@"ARC 内存管理" nextVC:@"MMViewController"];
     [self addCellWithTitle:@"MRC 内存管理" nextVC:@"MRCViewController"];
     ADD_SECTION(@"OC 数据结构");
+    [self addCellWithTitle:@"isa" nextVC:@"IsaViewController"];
     [self addCellWithTitle:@"OC 数据结构" nextVC:@"OCStructViewController"];
     [self addCellWithTitle:@"OC 内存占用" nextVC:@"ObjMemoryController"];
+    [self addCellWithTitle:@"OC 类结构" nextVC:@"OCClassController"];
     [self addCellWithTitle:@"KVO" nextVC:@"KVOViewController"];
     [self addCellWithTitle:@"Runloop" nextVC:@"RunloopViewController"];
     [self addCellWithTitle:@"Runtime" nextVC:@"RuntimeViewController"];

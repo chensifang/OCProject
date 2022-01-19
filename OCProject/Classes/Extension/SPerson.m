@@ -6,15 +6,15 @@
 //  Copyright © 2018年 fourye. All rights reserved.
 //
 
-#import "SFPerson.h"
+#import "SPerson.h"
 
-@implementation SFPerson
+@implementation SPerson
 void pushController(UIViewController *vc, BOOL animated) {
     
 }
 
 - (instancetype)copyWithZone:(NSZone *)zone {
-    SFPerson *new = [self.class.alloc init];
+    SPerson *new = [self.class.alloc init];
     new.name = self.name;
     return new;
 }
@@ -24,7 +24,7 @@ void pushController(UIViewController *vc, BOOL animated) {
 }
 
 + (instancetype)person {
-    SFPerson *person = [[super alloc] init];
+    SPerson *person = [[super alloc] init];
     return person;
 }
 - (void)dealloc {

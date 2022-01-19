@@ -11,13 +11,12 @@
 #import <objc/runtime.h>
 #import "SFViewController.h"
 #import "RunloopOb.h"
-#import "SFPerson.h"
+#import "SPerson.h"
 #import "MMViewController.h"
 #import "ChatC.h"
 #import "ChatUDP.h"
 #import "NSObject+Extension.h"
 #import "ResponseChainVC.h"
-#import "SFPerson.h"
 
 @interface OCStructViewController ()
 @property (nonatomic, strong) NSTimer *timer;
@@ -38,7 +37,6 @@
     ADD_SECTION(@"关键字测试");
     ADD_CELL(@"测试静态变量" , testStatic);
     ADD_CELL(@"测试const" , testConst);
-    [self addCellWithTitle:@"isa" nextVC:@"IsaViewController"];
 }
 
 
@@ -105,8 +103,8 @@ static NSObject *_obj;
 - (void)testTaggedPoint {
     /* c++ 文件（.mm）可以下面直接赋值，oc 不行 */
 //    static SFPerson *person = SFPerson.alloc.init;
-    static SFPerson *person;
-    person = SFPerson.alloc.init;
+    static SPerson *person;
+    person = SPerson.alloc.init;
     /* 会crash，多次调用 release，坏内存访问，线程不安全 */
     dispatch_apply(10000, dispatch_get_global_queue(0, 0), ^(size_t idx) {
 //        person.name = [NSString stringWithFormat:@"dahdajdlajdlajdaljda"];
@@ -137,7 +135,7 @@ static NSObject *_obj;
 #pragma mark - ---- 指针指向 class 模拟isa
 - (void)testPointer {
     __unused NSString *tmp = @"hello world";
-    id cls = [SFPerson class];
+    id cls = [SPerson class];
     void *isa = &cls;
     [(__bridge id)isa test];
 }

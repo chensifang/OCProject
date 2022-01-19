@@ -8,7 +8,7 @@
 
 #import "FoundationViewController.h"
 #import "UIColor+Extension.h"
-#import "SFPerson.h"
+#import "SPerson.h"
 #import "SFObject.h"
 
 @interface FoundationViewController ()
@@ -80,7 +80,7 @@
 static NSMutableDictionary *_dict;
 - (void)objKeyTest {
     _dict = @{}.mutableCopy;
-    SFPerson *obj = SFPerson.alloc.init;
+    SPerson *obj = SPerson.alloc.init;
     [_dict setObject:@"hello" forKey:obj];
     id xx = [_dict objectForKey:obj];
     NSLog(@"%@", xx);
