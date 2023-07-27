@@ -45,10 +45,9 @@
 #define ADD_CELL(title, SEL) [self addCellWithTitle:title selector:@selector(SEL)]
 
 #import "SFLogManager.h"
-#import <YYKit/UIView+YYAdd.h>
 #import "UIColor+Extension.h"
-#import  <FactoryViewController.h>
-#import "YYCGUtilities.h"
+#import <SFCore/FactoryViewController.h>
+#import <SFCore/UIView+YYAdd.h>
 #import "UIView+Extension.h"
 #import "Singleton.h"
 

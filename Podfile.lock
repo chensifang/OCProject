@@ -21,26 +21,18 @@ PODS:
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
-  - SFCore (0.0.4):
-    - ReactiveObjC
-    - SFLog
-    - YYKit
-  - SFLog (0.1.6)
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
+  - SFCore (0.1.0)
 
 DEPENDENCIES:
   - AFNetworking (= 3.2.1)
   - Aspects
   - fishhook
+  - ReactiveObjC
   - RSSwizzle
   - SDWebImage
-  - SFCore
+  - SFCore (= 0.1.0)
 
 SPEC REPOS:
-  https://git.coding.net/fourye/Specs.git:
-    - SFLog
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - Aspects
@@ -49,19 +41,16 @@ SPEC REPOS:
     - RSSwizzle
     - SDWebImage
     - SFCore
-    - YYKit
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
-  SFCore: 2451900c70dc58d88e8777ca0d8ab87f32e2de94
-  SFLog: 0a278953a3f5e48929fddcd1c991a48c5e3f3058
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  SFCore: 80db410e68deb69a821594ea43c27633be986d11
 
-PODFILE CHECKSUM: f6eb995457108d5bebf5ed236ba4f4fc5230e81f
+PODFILE CHECKSUM: b9b76868cc36b043997407e9d3f3804d39107152
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.12.1
